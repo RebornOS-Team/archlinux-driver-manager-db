@@ -1,0 +1,12 @@
+# Packaging
+packaging/**/pkg
+packaging/**/src
+packaging/**/*.tar.*
+packaging/**/archlinux-driver-manager-db-git/archlinux-driver-manager-db
+packaging/**/archlinux-driver-manager-db/archlinux-driver-manager-db
+
+# IDE
+*.code-workspace
+
+# Build files
+*.ron
