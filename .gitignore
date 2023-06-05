@@ -10,3 +10,4 @@ packaging/**/archlinux-driver-manager-db/archlinux-driver-manager-db
 
 # Build files
 *.ron
+*.db
