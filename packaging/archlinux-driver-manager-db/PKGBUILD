@@ -28,7 +28,7 @@ prepare() {
 
 build() {     
     cd "$PROJECT_DIRECTORY"
-    archlinux-driver-manager generate-database human_readable_database.yaml database.ron
+    archlinux-driver-manager generate-database human_readable_database.yaml database.db
 }
 
 package() {
@@ -36,5 +36,5 @@ package() {
     optdepends+=("archlinux-driver-manager")
 
     cd "$PROJECT_DIRECTORY"
-    install -Dm644 "database.ron" "$pkgdir/var/lib/archlinux-driver-manager/database.ron"
+    install -Dm644 "database.db" "$pkgdir/var/lib/archlinux-driver-manager/database.db"
 }
